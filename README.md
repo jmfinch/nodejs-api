@@ -6,10 +6,14 @@ Miro diagram: https://miro.com/app/board/uXjVPqyWFI0=/?share_link_id=28869968983
 ● Instructions on how to build and start the web API locally
 
 1 required tools
+
 Download NodeJs: https://nodejs.org/en/download/   ( select version for you )
- - Be sure to download recommended tools ( this will include NPM )
+-Be sure to download recommended tools ( this will include NPM )
+
 Postman ( if you will use for testing endpoints )
+
 VSCode
+
 Source: https://github.com/jmfinch/nodejs-api ( public - clonable or pull down zip )
 
 2 initialize ( utilzing terminal, or VSCODE )
