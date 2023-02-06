@@ -1,7 +1,13 @@
 const express = require('express');
 const res = require('express/lib/response');
-const handler = express();
 const bodyParser = require('body-parser');
+const { InMemoryDatabase  } = require('in-memory-database');
+
+const handler = express();
+const client = new InMemoryDatabase();
+
+handler.set('client', client);
+//console.log(client.keys());
 
 const deviceRoutes = require('./handler/routes/device');
 const unhandledRoutes = require('./handler/routes/unhandled');
