@@ -26,6 +26,7 @@ npm start
 
 
 ● Documentation for the API endpoints and any parameters required
+
     Miro diagram: https://miro.com/app/board/uXjVPqyWFI0=/?share_link_id=288699689830
     http://localhost:4300/device/store
     {
@@ -47,12 +48,14 @@ npm start
 
 
 ● A brief summary of how the project is structured
+
     Server sets listening on http server with port.
     Handler processes all incoming requests and sends them to their proper route.
     handler/routes endpoint logic to handle individual requests.
 
 ● A list of improvements, items, optimizations you would have included if given
 more time
+
     implement a better model structure ( put in sqllite3 - possibly )
     logging for debugging efforts
     rework some of the logic based on an update to using models ( make code more DRY )
