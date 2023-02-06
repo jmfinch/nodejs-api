@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "0d15f06b-bd12-43b5-ac2f-a3f9d6781a03",
+		"name": "BrightWheel-API",
+		"description": "Adding some endpoints for easy consumption.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/device/detail?id=6769789g798g69g77697",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"device",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6769789g798g69g77697"
+						}
+					]
+				},
+				"description": "http://localhost:4300/device/detail?id=6769789g798g69g77697"
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"6769789g798g69g77697\",\r\n  \"readings\": [\r\n    {\r\n      \"timestamp\": \"2023-02-01T01:35:15.770Z\",\r\n      \"count\": 6\r\n    },\r\n        {\r\n      \"timestamp\": \"2023-02-01T01:37:15.770Z\",\r\n      \"count\": 8\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4300/device/store",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"device",
+						"store"
+					]
+				},
+				"description": "http://localhost:4300/device/store"
+			},
+			"response": []
+		},
+		{
+			"name": "Latest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/device/latest?id=6769789g798g69g77697",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"device",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6769789g798g69g77697"
+						}
+					]
+				},
+				"description": "http://localhost:4300/device/latest?id=6769789g798g69g77697"
+			},
+			"response": []
+		},
+		{
+			"name": "Cummulative",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4300/device/cummulative?id=6769789g798g69g77697",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4300",
+					"path": [
+						"device",
+						"cummulative"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6769789g798g69g77697"
+						}
+					]
+				},
+				"description": "http://localhost:4300/device/cummulative?id=6769789g798g69g77697"
+			},
+			"response": []
+		}
+	]
+}
